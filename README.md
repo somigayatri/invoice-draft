@@ -8,6 +8,11 @@ Download the latest version of geckodriver to your test env. The location of the
 ```
 StepDefinitions.java file has a ToDo statement indicating the place (Line 36) where the path to downloaded and unzipped file must be added.
 ```
+Additionally, on a mac, the driver must explicitly be quarantined to be able to use. 
+```
+xattr -r -d com.apple.quarantine PATH_TO_DRIVER
+```
+
 Create a test account on Xero if you do not already have one. The email address and password are necessary in the code for authentication purposes.
 * https://www.xero.com/
 ```
